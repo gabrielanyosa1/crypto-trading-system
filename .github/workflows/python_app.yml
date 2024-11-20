@@ -12,14 +12,14 @@ jobs:
     
     services:
       mongodb:
-        image: mongo:8.0
+        image: mongo:latest
         ports:
           - 27017:27017
 
     steps:
     - uses: actions/checkout@v2
     
-    - name: Set up Python 3.9
+    - name: Set up Python 3.12
       uses: actions/setup-python@v2
       with:
         python-version: 3.12
